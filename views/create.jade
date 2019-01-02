@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  div(class="container")
+    div(class="row")
+      div(class="col-sm-12 col-md-6")
+        h1 #{title}
+        div(class="row")
+          div(class="col-sm-12 col-md-2")
+            a(href="/" class="btn btn-outline-secondary") Back
+          div(class="col-sm-12 col-md-2")
+            button(class="btn btn-outline-primary" id="submit" onclick="storeEvent(this)") Submit
+    br
+    div(class="row")
+      div(class="col-sm-12 col-md-6")
+        form
+          div(class="form-group")
+            label(for="summary") 標題：
+            input(class="form-control" id="summary" name="summary" placeholder="新增標題")
+
+          div(class="form-group")
+            div(class="form-check")
+              input(type="checkbox" class="form-check-input" id="allday" name="allday" checked)
+              label(class="form-check-label" for="allday") 全天
+
+          div(class="input-group input-group-sm mb-3")
+            input(type="text" class="form-control datetimepicker-input col-md-4" id="datepicker1" name="datepicker1" data-toggle="datetimepicker" data-target="#datepicker1")
+
+            div(class="input-group-prepend")
+              span(class="input-group-text" id="basic-addon1") to
+
+            input(type="text" class="form-control datetimepicker-input col-md-4" id="datepicker2" name="datepicker2" data-toggle="datetimepicker" data-target="#datepicker2")
+
+          //- div(class="input-group input-group-sm mb-3")
+          //-   input(type="text" class="form-control datetimepicker-input col-md-2" id="timepicker1" name="timepicker1" data-toggle="datetimepicker" data-target="#timepicker1")
+
+          //-   div(class="input-group-prepend")
+          //-     span(class="input-group-text" id="basic-addon1") to
+
+          //-   input(type="text" class="form-control datetimepicker-input col-md-2" id="timepicker2" name="timepicker2" data-toggle="datetimepicker" data-target="#timepicker2")
+
+
+          div(class="form-group")
+            label(for="location") 地址：
+            input(class="form-control" id="location" name="location" placeholder="地址")
+
+          div(class="form-group")
+            label(for="description") 描述：
+            textarea(class="form-control" id="description" name="description")

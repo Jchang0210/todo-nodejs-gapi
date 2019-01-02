@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div(class='container')
+    div(class='row')
+      div(class="col-sm-12 col-md-9")
+        h1 #{title}
+        div(class='row')
+          div(class="col-md-4")
+            button(type="button" class='btn btn-primary btn-spacing' id='load' onclick='loadCalendar(this)') Load
+            a(href="/create" class="btn btn-success btn-spacing") Create
+          div(class="col-md-8")
+            div(class="alert alert-primary" role="alert") 點Load來讀取資料，將會顯示即將到來的8筆事件。
+
+    br
+    div(class='row')
+      div(class="col-sm-12 col-md-6" id="todos")
+      div(class="col-sm-12 col-md-6" id="detail")

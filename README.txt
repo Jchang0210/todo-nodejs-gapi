@@ -8,16 +8,16 @@
  nodejs
 
 架設步驟：
- 進入下列連結取得google api憑證
- https://developers.google.com/drive/activity/v1/quickstart/nodejs#step_1_turn_on_the
+ 1. 進入下列連結取得google api憑證
+    https://developers.google.com/drive/activity/v1/quickstart/nodejs#step_1_turn_on_the
 
-依序進行下列步驟：
- a. 點選按鈕 "enable the google drive activity api"
- b. 建立新的專案，或者選取現有專案
- c. 下載憑證檔
- d. 將憑證取名 credentials.json 放到專案根目錄
- e. 開啟終端機於專案根目錄執行 npm install
- f. 執行 npm start
+ 2. 依序進行下列步驟：
+    a. 點選按鈕 "enable the google drive activity api"
+    b. 建立新的專案，或者選取現有專案
+    c. 下載憑證檔
+    d. 將憑證取名 credentials.json 放到專案根目錄
+    e. 開啟終端機於專案根目錄執行 npm install
+    f. 執行 npm start
 
 開啟瀏覽器在連結欄輸入：
  localhost:3001
